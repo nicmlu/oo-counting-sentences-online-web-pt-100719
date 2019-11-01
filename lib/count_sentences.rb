@@ -16,6 +16,7 @@ class String
 
   def count_sentences
     new_array = self.split(/[.?!]/).reject {|string| string.empty?}
+    binding.pry
     return new_array.length
   end
 end
